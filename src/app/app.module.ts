@@ -7,6 +7,7 @@ import { ViewTodosComponent } from './view-todos/view-todos.component';
 import { TodosListComponent } from './todos-list/todos-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SingleTodoComponent } from './single-todo/single-todo.component';
+import { httpInterceptProviders } from './http-interceptors';
 
 
 // import { YearCalendarModule } from '@iomechs/angular-year-calendar';
@@ -24,7 +25,7 @@ import { SingleTodoComponent } from './single-todo/single-todo.component';
     HttpClientModule
     // YearCalendarModule,
   ],
-  providers: [],
+  providers: [httpInterceptProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
