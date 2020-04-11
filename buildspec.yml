@@ -19,7 +19,7 @@ phases:
       # - echo testing...
       # - yarn test
       - echo building...
-      - ng build --prod
+      - ng build
 artifacts:
   files:
     - "**/*"
